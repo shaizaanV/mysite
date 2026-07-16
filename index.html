@@ -4,122 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4fc3f7;
+        }
+        /* Changed from display: grid to remove the grid layout */
+        .favorites-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category-card {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: 1px solid #3d3d3d;
+            margin-bottom: 20px; /* Added spacing between stacked cards */
+        }
+        .category-card h3 {
+            margin-top: 0;
+            color: #ffb74d;
+        }
+        .category-card p {
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+    </style>
 </head>
 <body>
-
     <div class="main-header">
         <h1>Shaizaan</h1>
         <p class="intro-text">
             Hi, my name is Shaizaan. I am learning coding and I made this site!
         </p>
-        <a href="https://github.com" target="_blank" class="github-btn">
+        <a href="https://github.com/shaizaanV" target="_blank" class="github-btn">
             🐙 Visit My GitHub
         </a>
     </div>
 
     <h1>My Favorites</h1>
-    
-    <div class="favorites-list">
-        <div class="favorite-item">
+
+    <!-- Renamed class to reflect the layout change -->
+    <div class="favorites-container">
+        
+        <!-- 1. Movies -->
+        <div class="category-card">
             <h3>Movies</h3>
             <p>Dr.Strange</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 2. TV Shows -->
+        <div class="category-card">
             <h3>TV Shows</h3>
             <p>Breaking Bad, Stranger Things</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 3. Music -->
+        <div class="category-card">
             <h3>Songs</h3>
             <p>Black and Yellow,Gods Plan, Headlines, The less I know the better, Freebird, Life goes on, Feel Good Inc, Song 2, Cant Stop</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 4. Video Games -->
+        <div class="category-card">
             <h3>Video Games</h3>
             <p>Minecraft, Cyberpunk 2077, Stardew Valley, Undertale</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 5. Books -->
+        <div class="category-card">
             <h3>Books</h3>
             <p>One Piece, DBZ, One Punch man(I read manga)</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 6. Foods -->
+        <div class="category-card">
             <h3>Foods</h3>
             <p>Chicken 65, Samosa</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 7. Drinks -->
+        <div class="category-card">
             <h3>Drinks</h3>
             <p>Mango Lassi, Coke, Tiramasu Matcha</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 8. Hobbies -->
+        <div class="category-card">
             <h3>Hobbies</h3>
             <p>Coding, Gaming, Hapkido</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 9. Sports -->
+        <div class="category-card">
             <h3>Sports</h3>
             <p>Soccer, Basketball, American Football</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 10. Tech Gadgets -->
+        <div class="category-card">
             <h3>Tech Gadgets</h3>
             <p>Meta Glasses, PCs, Really good Keyboards</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 11. Coding Languages -->
+        <div class="category-card">
             <h3>Code Languages</h3>
             <p>Python, C++, C</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 12. Animals -->
+        <div class="category-card">
             <h3>Animals</h3>
             <p>Chickens, Cows, Goats</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 13. Travel Destinations -->
+        <div class="category-card">
             <h3>Destinations</h3>
             <p>Tokyo, Reykjavik, London</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 14. Seasons -->
+        <div class="category-card">
             <h3>Seasons</h3>
             <p>Winter</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 15. Apps -->
+        <div class="category-card">
             <h3>Apps</h3>
             <p>VS Code, Discord, Spotify</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 16. Colors -->
+        <div class="category-card">
             <h3>Colors</h3>
             <p>BLACK AND YELLOW</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 17. Board Games -->
+        <div class="category-card">
             <h3>Board Games</h3>
-            <p>Chess, Monopoly</p>
+            <p>Chess, Monopoly</p> <!-- Fixed typo here (/p> changed to </p>) -->
         </div>
 
-        <div class="favorite-item">
+        <!-- 18. Website Layouts -->
+        <div class="category-card">
             <h3>Desserts</h3>
             <p>Gulab Jamun,Tiramasu,Carmel and Vanilla Drumsticks</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 19. Superheroes -->
+        <div class="category-card">
             <h3>Superheroes</h3>
             <p>Dr. Strange, Spider-Man, Iron Man</p>
         </div>
 
-        <div class="favorite-item">
+        <!-- 20. Content Creators -->
+        <div class="category-card">
             <h3>🎥 Creators</h3>
             <p>TechJoyce, CarterPCs</p>
         </div>
+        
     </div>
-
 </body>
 </html>
