@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             text-align: center;
@@ -19,14 +20,56 @@
         .main-header {
             margin-bottom: 40px;
         }
-        
-        
         .github-octocat {
             width: 80px; 
             height: auto;
             margin-top: 15px;
             transition: transform 0.2s ease;
         }
+        .github-octocat:hover {
+            transform: scale(1.1);
+        }
+        .connect-section {
+            margin: 20px 0 40px 0;
+        }
+        .connect-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .social-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .btn-insta { background-color: #d6495b; }
+        .btn-github { background-color: #24292e; }
+        .btn-tiktok { background-color: #000000; }
+        .btn-mail { background-color: #d14836; }
+
         .favorites-container {
             display: flex;
             flex-direction: column;
@@ -54,9 +97,26 @@
         <p class="intro-text">
             Hi, my name is Shaizaan. I am learning coding and I made this site!
         </p>
-        <a href="https://github.com" target="_blank">
-            <img src="https://myoctocat.com" alt="GitHub Octocat" class="github-octocat">
-        </a>
+    </div>
+
+    <div class="connect-section">
+        <div class="connect-title">
+            <i class="fa-solid fa-link"></i> Connect With Me
+        </div>
+        <div class="social-container">
+            <a href="https://www.instagram.com/shaizaanvaliyani" target="_blank" class="social-btn btn-insta">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="github.com/shaizaanV" target="_blank" class="social-btn btn-github">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.tiktok.com/@shaiz.val?lang=en" target="_blank" class="social-btn btn-tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+            <a href="mailto:shaizaanv@gmail.com" class="social-btn btn-mail">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+        </div>
     </div>
 
     <h1>My Favorites</h1>
