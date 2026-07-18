@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             text-align: center;
@@ -19,15 +20,56 @@
         .main-header {
             margin-bottom: 40px;
         }
-<<<<<<< HEAD:mysite.html
-        
-        
         .github-octocat {
             width: 80px; 
             height: auto;
             margin-top: 15px;
             transition: transform 0.2s ease;
         }
+        .github-octocat:hover {
+            transform: scale(1.1);
+        }
+        .connect-section {
+            margin: 20px 0 40px 0;
+        }
+        .connect-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .social-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .btn-insta { background-color: #d6495b; }
+        .btn-github { background-color: #24292e; }
+        .btn-tiktok { background-color: #000000; }
+        .btn-mail { background-color: #d14836; }
+
         .favorites-container {
             display: flex;
             flex-direction: column;
@@ -38,22 +80,6 @@
         }
         .category-card {
             width: 100%;
-=======
-        /* Changed from display: grid to remove the grid layout */
-        .favorites-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .category-card {
-            background-color: #2d2d2d;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            border: 1px solid #3d3d3d;
-            margin-bottom: 20px; /* Added spacing between stacked cards */
->>>>>>> 7e7c198f23946a5d1f1a5cdda4099951d50e0a74:index.html
         }
         h3 {
             margin: 0 0 5px 0;
@@ -71,30 +97,35 @@
         <p class="intro-text">
             Hi, my name is Shaizaan. I am learning coding and I made this site!
         </p>
-        <a href="https://github.com" target="_blank">
-            <img src="https://myoctocat.com" alt="GitHub Octocat" class="github-octocat">
-        </a>
+    </div>
+
+    <div class="connect-section">
+        <div class="connect-title">
+            <i class="fa-solid fa-link"></i> Connect With Me
+        </div>
+        <div class="social-container">
+            <a href="https://www.instagram.com/shaizaanvaliyani" target="_blank" class="social-btn btn-insta">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="github.com/shaizaanV" target="_blank" class="social-btn btn-github">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.tiktok.com/@shaiz.val?lang=en" target="_blank" class="social-btn btn-tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+            <a href="mailto:shaizaanv@gmail.com" class="social-btn btn-mail">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+        </div>
     </div>
 
     <h1>My Favorites</h1>
-<<<<<<< HEAD:mysite.html
     <div class="favorites-container">
-=======
-
-    <!-- Renamed class to reflect the layout change -->
-    <div class="favorites-container">
-        
-        <!-- 1. Movies -->
->>>>>>> 7e7c198f23946a5d1f1a5cdda4099951d50e0a74:index.html
         <div class="category-card">
             <h3>Movies</h3>
             <p>Dr.Strange</p>
         </div>
 
-<<<<<<< HEAD:mysite.html
-=======
-        <!-- 2. TV Shows -->
->>>>>>> 7e7c198f23946a5d1f1a5cdda4099951d50e0a74:index.html
         <div class="category-card">
             <h3>TV Shows</h3>
             <p>Breaking Bad, Stranger Things</p>
@@ -172,11 +203,7 @@
 
         <div class="category-card">
             <h3>Board Games</h3>
-<<<<<<< HEAD:mysite.html
             <p>Chess, Monopoly</p>
-=======
-            <p>Chess, Monopoly</p> <!-- Fixed typo here (/p> changed to </p>) -->
->>>>>>> 7e7c198f23946a5d1f1a5cdda4099951d50e0a74:index.html
         </div>
 
         <div class="category-card">
@@ -193,7 +220,6 @@
             <h3>🎥 Creators</h3>
             <p>TechJoyce, CarterPCs</p>
         </div>
-        
     </div>
 </body>
 </html>
